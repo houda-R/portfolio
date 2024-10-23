@@ -611,6 +611,7 @@ ul {
 .navigation-about a:hover,
 .skills:hover,
 .tools:hover,
+.outils:hover,
 .navigation-about .active {
     opacity: 1;
     color: #EEA47FFF;
@@ -619,13 +620,15 @@ ul {
 }
 
 #skills,
-#tools {
+#tools,
+#outils {
     display: flex;
     flex-wrap: wrap;
 }
 
 .skills,
-.tools {
+.tools,
+.outils {
     padding: 8px;
     margin-bottom: 10px;
     margin-right: 1.5rem;
@@ -1123,8 +1126,6 @@ ul {
     height: 100%;
 }
 
-/* ----------------------------- */
-/* Smartphones (portrait and landscape) */
 @media (max-width: 768px) {
     .container {
         width: 100%;
@@ -1198,18 +1199,19 @@ ul {
     .timeline-content::after {
         display: none;
     }
-    .card-box.box2,.card-box.box3{
+
+    .card-box.box2,
+    .card-box.box3 {
         display: none;
     }
+
     .box1 {
         width: 90%;
         height: 400px;
-    
+
     }
-   
 }
 
-/* Laptops */
 @media (min-width: 769px) and (max-width: 1024px) {
     .container {
         width: 85%;
@@ -1244,6 +1246,7 @@ ul {
         margin-bottom: 10px;
 
     }
+
     .timeline-icons {
         display: none;
     }
@@ -1256,13 +1259,16 @@ ul {
     .timeline-content::after {
         display: none;
     }
-    .card-box.box2,.card-box.box3{
+
+    .card-box.box2,
+    .card-box.box3 {
         display: none;
     }
+
     .box1 {
         width: 90%;
         height: 400px;
-    
+
     }
-  
+
 }
